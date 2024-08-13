@@ -1,34 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Corpus Builder
 
-First, run the development server:
+Corpus Builder is a web application designed to convert unclean text into clean, segmented text. It processes the input text by removing numbers and formatting it for better readability. This tool is ideal for preparing text data for analysis or presentation.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Single Line Conversion:** Removes line breaks to convert text into a single line.
+- **Automatic Segmentation:** Adds line breaks after each occurrence of a number.
+- **Number Removal:** Strips numbers from the text, leaving behind clean, segmented content.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Demo
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+You can try the live version of the application [here](https://corpus-builder.netlify.app).
 
-## Learn More
+## Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- **React:** JavaScript library for building user interfaces.
+- **Tailwind CSS:** Utility-first CSS framework for styling.
+- **Netlify:** Platform for deploying web applications.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To run this project locally, follow these steps:
 
-## Deploy on Vercel
+1. Clone the repository:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   git clone https://github.com/ankitklakra/corpus-builder.git
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. Navigate to the project directory:
+
+   ```bash
+   cd corpus-builder
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm start
+   ```
+
+5. Open your browser and go to `http://localhost:3000` to view the application.
+
+## Usage
+
+1. Enter the unclean text into the provided text area.
+2. Click the "Submit" button to process the text.
+3. The cleaned and segmented text will appear in the output text area.
+
+## Contributing
+
+If you want to contribute to this project, feel free to fork the repository and submit a pull request. Any contributions are welcome!
+
+## License
+
+This project is licensed under the MIT License.
+
